@@ -1,0 +1,22 @@
+array(
+	test => array(
+    	array(
+			array(
+				index => -2,
+				data => 3,
+				times =>70000,
+			),
+		),	
+    ), 
+	fields => array(
+		-2 => rooms,
+	),	
+	filter => array(
+		array( 
+			field=>"rooms",
+			equal=>3
+		)
+	),
+    eta => 70000,    
+) 
+

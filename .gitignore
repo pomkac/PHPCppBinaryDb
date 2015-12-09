@@ -1,0 +1,5 @@
+.idea/
+/csv/*.csv
+*.log
+bootstrap.bat
+phpunit.phar

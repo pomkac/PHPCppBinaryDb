@@ -1,0 +1,64 @@
+array(
+	test => array(
+    	array(
+        	index => array(-2, -5),
+        	data => 'first one string', 
+        ), 	
+    	array(
+        	index => array(-2, -4),
+        	data => ' second string', 
+        ), 	
+    	array(
+        	index => array(-2, -3),
+        	data => 'some string', 
+        ), 	
+    	array(
+        	index => array(-2, -5),
+        	data => 'one more string', 
+        ), 	
+    	array(
+        	index => array(-2, -4),
+        	data => 'another string', 
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 70,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+          			-2 => array( 
+          				-3 => 'some string', 
+          				-4 => 'another string', 
+          				-5 => 'one more string',
+          			) 
+          		),
+          	),
+          	array( 
+          		'0 - index' => -2, 
+          		'1 - data' => array( 
+          			-3 => 'some string',
+          			-4 => 'another string',
+          			-5 => 'one more string',
+          		),
+          	),
+          	array( 
+          		'0 - index' => array(-2, -3), 
+          		'1 - data' => 'some string',
+          	),
+          	array( 
+          		'0 - index' => array(-2, -3, -1), 
+          		'1 - data' => NULL,
+          	),
+        	array(
+            	'0 - index' => array(-2, -4),
+            	'1 - data' => 'another string',
+            ), 	
+        	array(
+            	'0 - index' => array(-2, -5),
+            	'1 - data' => 'one more string',
+            ), 	
+          ),
+        )
+) 
+

@@ -1,0 +1,55 @@
+#
+# тест демонстрирует переполнение integer для ключей больше 2^31+1
+# (вместо 0xFFFFFF00 читается -256)
+array(
+	test => array(
+    	array(
+        	index => NULL,
+        	data => array( 
+                        1 => 0x273,
+                        0xFF => 'look over there',
+                        0x100 => array( -3 => 'some string' ), 
+                        0xFFFF => array( -4 => 0xFADE ),
+                        0x10000 => array( -2 => 'another string' ) ,
+                        0xFFFFFF => array( -5 => 0xABBA ),
+                        0x1000000 => array( -1 => 'one more string' ) ,
+                        0xFFFFFF00 => array( -6 => 0xACDC ),
+            ),
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 16488,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => 1, 
+          		'1 - data' => array( 0 => 0x273 ),
+          	),
+          	array( 
+          		'0 - index' => array(1, 0), 
+          		'1 - data' => 0x273,
+          	),
+          	array( 
+          		'0 - index' => array(0x100, -3), 
+          		'1 - data' => 'some string',
+          	),
+          	array( 
+          		'0 - index' => 0x100, 
+          		'1 - data' => array( -3 => 'some string' ),
+          	),
+          	array(
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+          			1 => array( 0 => 0x273 ),
+                    0xFF => array( 0 => 'look over there' ),
+                    0x100 => array( -3 => 'some string' ), 
+                    0xFFFF => array( -4 => 0xFADE ),
+                    0x10000 => array( -2 => 'another string' ) ,
+                    0xFFFFFF => array( -5 => 0xABBA ),
+                    0x1000000 => array( -1 => 'one more string' ) ,
+                    -256 => array( -6 => 0xACDC ),
+          		),
+          	)
+          ),
+        )
+) 
+

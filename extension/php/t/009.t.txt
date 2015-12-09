@@ -1,0 +1,28 @@
+array(
+	test => array(
+    	array(
+        	index => -1,
+        	data => "1234345678901",
+        ), 	
+    	array(
+        	index => -1,
+        	data => "short string",
+        ),
+    	array(
+        	index => -1,
+        	data => "1234345678901",
+        ),		
+    ), 
+    eta => array(
+          '0 - size' => 25,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+					-1 => "1234345678901",
+          		),
+          	),
+          ),
+        )
+) 
+

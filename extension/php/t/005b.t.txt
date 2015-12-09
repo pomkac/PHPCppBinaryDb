@@ -1,0 +1,22 @@
+# ядро зацикливается на этом тесте
+array(
+	test => array(
+    	array(
+        	index => NULL,
+        	data => array( 
+                        0x1000000 => array( -1 => 'one more string' ) ,
+            ),
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 7200,
+          '1 - get' => array(
+          	array(
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+                    0x1000000 => array( -1 => 'one more string' ) ,
+          		),
+          	)
+          ),
+        )
+)

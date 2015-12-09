@@ -1,0 +1,9 @@
+{
+	"connTypeCsv" : "csv/GeoConnectionType2.csv",
+	"ispNameCsv" : "csv/GeoIPISP.csv",
+	"countryCodeCsv" : "csv/GeoIPCity.csv",
+	"translateCsv" : "csv/transISP.csv",
+	"outputCsv" : "csv/CarrierCode.csv",
+	"outputDb" : "db/out.dbca",
+	"version" : 1
+}

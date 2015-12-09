@@ -1,0 +1,28 @@
+array(
+	test => array(
+    	array(
+        	index => NULL,
+        	data => array( 
+				-1 => "another string",
+				-3 => array(),
+				-4 => "",
+				-5 => 0,
+            ),
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 36,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+					-1 => "another string",
+					-3 => array(),
+					-4 => "",
+					-5 => 0,
+          		),
+          	),
+          ),
+        )
+) 
+

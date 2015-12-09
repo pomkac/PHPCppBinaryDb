@@ -1,0 +1,18 @@
+Структура базы:
+Заголовок 4 байта "DBCA"
+Длинна заголовка 4 байта int
+Версия базы 4 байта int
+Номер версии сборки 4 байта int 
+Дата сборки 4 байта int (unix timestamp)
+Количество записей int 4 байта
+Ссылка на поисковый хэш индекс в файле int 4 байта
+для каждой записи
+{
+	длинна carrier_code 4 байта int
+	содержимое carrier_code char[]
+}
+//Далее идет хэш индекс содержащий внутри start_ip, end_ip,
+    structure_version — int
+    build_version — int
+    build_date — varchar(20) или int
+    count — int

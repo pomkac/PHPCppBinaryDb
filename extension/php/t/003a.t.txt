@@ -1,0 +1,58 @@
+array(
+	test => array(
+    	array(
+        	index => NULL,
+        	data => array( 
+                        -1 => 0x273,
+                        -2 => array( -3 => 'some string' ),
+                        -4 => array( -5 => 'amother string' ),
+            ),
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 58,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+          			-1 => 0x273,
+          			-2 => array( -3 => 'some string' ),
+                    -4 => array( -5 => 'amother string' ),
+          		),
+          	),
+          	array( 
+          		'0 - index' => -1, 
+          		'1 - data' => 0x273,
+          	),
+          	array( 
+          		'0 - index' => array(-1, -4), 
+          		'1 - data' => NULL,
+          	),
+          	array( 
+          		'0 - index' => -2, 
+          		'1 - data' => array( -3 => 'some string' ),
+          	),
+          	array( 
+          		'0 - index' => array(-2, -3), 
+          		'1 - data' => 'some string',
+          	),
+          	array( 
+          		'0 - index' => array(-2, -3, -1), 
+          		'1 - data' => NULL,
+          	),
+          	array( 
+          		'0 - index' => -4, 
+          		'1 - data' => array( -5 => 'amother string' ),
+          	),
+          	array( 
+          		'0 - index' => array(-4, -5), 
+          		'1 - data' => 'amother string',
+          	),
+          	array( 
+          		'0 - index' => array(-4, -6), 
+          		'1 - data' => NULL,
+          	),
+          ),
+     )
+) 
+

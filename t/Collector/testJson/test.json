@@ -1,0 +1,5 @@
+{
+	"param" : "val",
+	"fileName" : "../testCsv/quotes.csv",
+	"fileName2" : "../testCsv/nonExistent.csv"
+}

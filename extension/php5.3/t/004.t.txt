@@ -1,0 +1,60 @@
+array(
+	test => array(
+    	array(
+        	index => NULL,
+        	data => array( 
+                        -1 => 0x273,
+                        -2 => array( -3 => 'some string' ) 
+            ),
+        ), 	
+    	array(
+        	index => -1,
+        	data => array( -9 => 0xABCDEF ),
+        ), 	
+    	array(
+        	index => -1,
+        	data => array( -8 => 0xFADE ),
+        ), 	
+    	array(
+        	index => array(-2, -3),
+        	data => 'ANYTHING',
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 54,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 
+          			-1 => array( -8 => 0xFADE, -9 => 0xABCDEF ),
+          			-2 => array( -3 => 'ANYTHING' ),
+          		),
+          	),
+          	array( 
+          		'0 - index' => -1, 
+          		'1 - data' => array( -8 => 0xFADE, -9 => 0xABCDEF ),
+          	),
+          	array( 
+          		'0 - index' => array(-1, -9), 
+          		'1 - data' => 0xABCDEF,
+          	),
+          	array( 
+          		'0 - index' => array(-1, -8), 
+          		'1 - data' => 0xFADE,
+          	),
+          	array( 
+          		'0 - index' => -2, 
+          		'1 - data' => array( -3 => 'ANYTHING' ),
+          	),
+          	array( 
+          		'0 - index' => array(-2, -3), 
+          		'1 - data' => 'ANYTHING',
+          	),
+          	array( 
+          		'0 - index' => array(-2, -3, -1), 
+          		'1 - data' => NULL,
+          	),
+          ),
+        )
+) 
+

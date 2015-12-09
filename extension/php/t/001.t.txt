@@ -1,0 +1,38 @@
+array(
+	test => array(
+    	array(
+        	index => 0,
+        	data => 0x273,
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 13,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => 0, 
+          		'1 - data' => 0x273
+          	),
+          	array( 
+          		'0 - index' => array(0), 
+          		'1 - data' => 0x273
+          	),
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array( 0 => 0x273 )
+          	),
+          	array( 
+          		'0 - index' => array(0, 0), 
+          		'1 - data' => NULL
+          	),
+          	array( 
+          		'0 - index' => -1, 
+          		'1 - data' => NULL
+          	),
+          	array( 
+          		'0 - index' => array(-1), 
+          		'1 - data' => NULL
+          	),
+          ),
+    )
+) 
+

@@ -1,0 +1,68 @@
+array(
+	test => array(
+    	array(
+        	index => -1,
+        	data => 'this is index -1 value',
+        ), 	
+    	array(
+        	index => 1,
+        	data => 'THISisINDEX 1 VALUE',
+        ), 	
+    	array(
+        	index => -2,
+        	data => 'Value Of Index -2',
+        ), 	
+    	array(
+        	index => 2,
+        	data => 'this_is_index_2_value',
+        ), 	
+    	array(
+        	index => -3,
+        	data => '-3 index value',
+        ), 	
+    ), 
+    eta => array(
+          '0 - size' => 1154,
+          '1 - get' => array(
+          	array( 
+          		'0 - index' => array(-1), 
+          		'1 - data' => 'this is index -1 value',
+          	),
+          	array( 
+          		'0 - index' => 1, 
+          		'1 - data' => array( 0 => 'THISisINDEX 1 VALUE' ),
+          	),
+          	array( 
+          		'0 - index' => array(1, 0), 
+          		'1 - data' => 'THISisINDEX 1 VALUE',
+          	),
+          	array( 
+          		'0 - index' => -2, 
+          		'1 - data' => 'Value Of Index -2',
+          	),
+          	array( 
+          		'0 - index' => 2, 
+          		'1 - data' => array( 0 => 'this_is_index_2_value'),
+          	),
+          	array( 
+          		'0 - index' => array(2, 0), 
+          		'1 - data' => 'this_is_index_2_value',
+          	),
+          	array( 
+          		'0 - index' => -3, 
+          		'1 - data' => '-3 index value',
+          	),
+          	array( 
+          		'0 - index' => NULL, 
+          		'1 - data' => array(
+          			1 => array( 0 => 'THISisINDEX 1 VALUE' ), 
+          			2 => array( 0 => 'this_is_index_2_value' ),
+          			-3 => '-3 index value',
+          			-2 => 'Value Of Index -2',
+          			-1 => 'this is index -1 value',
+          		)
+          	),
+          ),
+        )
+) 
+

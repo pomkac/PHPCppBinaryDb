@@ -1,0 +1,36 @@
+array(
+	test => array(
+    	array(
+			array(
+				index => -2,
+				data => "some string",
+				times =>2,
+			),
+		),
+    	array(
+			array(
+				index => -2,
+				data => "second string",
+				times =>3,
+			),
+		),
+    	array(
+			array(
+				index => -2,
+				data => "third string",
+				times =>2,
+			),
+		),	
+    ), 
+	fields => array(
+		-2 => cm,
+	),	
+	filter => array(
+		array( 
+			field=>"cm",
+			like=>"second"
+		)
+	),
+    eta => 3,    
+) 
+
