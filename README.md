@@ -5,7 +5,7 @@
 * Written on PHP
 * Execute through 
 ```
-php collector.php  --configFile=<относительный путь к файлу с опциями, например opts.json>
+php collector.php  --configFile=<root_to_opts.json>
 ```
 * Tests in t folder (phpunit)
 * Run tests through
@@ -40,8 +40,8 @@ interface CarrierDb {
 ### C++ version of reader (PHP extension)
 
 * Located in extension folder
-* Requires boost library
-* Under windows can be built with Visual Studio 2012 or higher
+* Requires Boost library
+* Under Windows can be built with Visual Studio 2012 or higher
 * Under Linux/Mac OS X built by gcc
 ```
 phpize
